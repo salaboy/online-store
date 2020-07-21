@@ -53,7 +53,7 @@ h2 {
 }
 .block.conference {
   height: 30vh;
-  background-color: #91DDFF;
+  background-color: #4131ff;
 
 }
 .bottom-blocks {
@@ -62,12 +62,12 @@ h2 {
 .block.block-left {
   width: 50vw;
   height: 70vh;
-  background-color: #91DDFF;
+  background-color: #4131ff;
 }
 .block.block-right {
   width: 50vw;
   height: 70vh;
-  background-color: #91DDFF;
+  background-color: #4131ff;
 }
 
 /*
