@@ -16,7 +16,7 @@ public class DemoApplication {
 
 @Controller
 class SiteController {
-    @Value("${version:0.0.1}")
+    @Value("${version:0.0.0}")
     private String version;
 
     @GetMapping("/")
