@@ -21,8 +21,11 @@ class SiteController {
     @Value("${version:0.0.0}")
     private String version;
 
-    @Value("${PRODUCT_SERVICE:http://products-service}")
-    private String PRODUCT_SERVICE;
+    @Value("${PRODUCTS_SERVICE:http://products-service}")
+    private String PRODUCTS_SERVICE;
+
+    @Value("${CUSTOMERS_SERVICE:http://customers-service}")
+    private String CUSTOMERS_SERVICE;
 
     private RestTemplate restTemplate = new RestTemplate();
 
@@ -31,8 +34,15 @@ class SiteController {
         model.addAttribute("version", version);
 
         try {
-            ResponseEntity<String> productServiceVersion = restTemplate.getForEntity(PRODUCT_SERVICE + "/info", String.class);
-            model.addAttribute("productService", productServiceVersion.getBody());
+            ResponseEntity<String> productsServiceVersion = restTemplate.getForEntity(PRODUCTS_SERVICE + "/info", String.class);
+            model.addAttribute("productsService", productsServiceVersion.getBody());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        try {
+            ResponseEntity<String> customersServiceVersion = restTemplate.getForEntity(CUSTOMERS_SERVICE + "/info", String.class);
+            model.addAttribute("customersService", customersServiceVersion.getBody());
         } catch (Exception e) {
             e.printStackTrace();
         }
