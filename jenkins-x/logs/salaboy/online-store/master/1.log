@@ -1,32 +1,32 @@
 
-Showing logs for build [32msalaboy-online-store-master-hw5gd-1[0m stage [32mfrom-build-pack[0m and container [32mcredential-initializer[0m
-{"level":"info","ts":1595329479.81783,"caller":"creds-init/main.go:44","msg":"Credentials initialized."}
+Showing logs for build [32msalaboy-online-store-master-2ntdc-1[0m stage [32mfrom-build-pack[0m and container [32mcredential-initializer[0m
+{"level":"info","ts":1595841905.4331417,"caller":"creds-init/main.go:44","msg":"Credentials initialized."}
 
-Showing logs for build [32msalaboy-online-store-master-hw5gd-1[0m stage [32mfrom-build-pack[0m and container [32mworking-dir-initializer[0m
+Showing logs for build [32msalaboy-online-store-master-2ntdc-1[0m stage [32mfrom-build-pack[0m and container [32mworking-dir-initializer[0m
 
-Showing logs for build [32msalaboy-online-store-master-hw5gd-1[0m stage [32mfrom-build-pack[0m and container [32mplace-tools[0m
+Showing logs for build [32msalaboy-online-store-master-2ntdc-1[0m stage [32mfrom-build-pack[0m and container [32mplace-tools[0m
 
-Showing logs for build [32msalaboy-online-store-master-hw5gd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-salaboy-online-store-master-hw5gd-hk6cv[0m
-{"level":"info","ts":1595329508.5450423,"caller":"git/git.go:105","msg":"Successfully cloned https://github.com/*******/online-store.git @ v0.0.1 in path /workspace/source"}
-{"level":"warn","ts":1595329508.5451798,"caller":"git/git.go:152","msg":"Unexpected error: creating symlink: symlink /tekton/home/.ssh /root/.ssh: file exists"}
-{"level":"info","ts":1595329508.5932848,"caller":"git/git.go:133","msg":"Successfully initialized and updated submodules in path /workspace/source"}
+Showing logs for build [32msalaboy-online-store-master-2ntdc-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-salaboy-online-store-master-2ntdc-64lkd[0m
+{"level":"info","ts":1595841913.967319,"caller":"git/git.go:105","msg":"Successfully cloned https://github.com/*******/online-store.git @ v0.0.3 in path /workspace/source"}
+{"level":"warn","ts":1595841913.9674294,"caller":"git/git.go:152","msg":"Unexpected error: creating symlink: symlink /tekton/home/.ssh /root/.ssh: file exists"}
+{"level":"info","ts":1595841914.0074556,"caller":"git/git.go:133","msg":"Successfully initialized and updated submodules in path /workspace/source"}
 
-Showing logs for build [32msalaboy-online-store-master-hw5gd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
+Showing logs for build [32msalaboy-online-store-master-2ntdc-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
 
-Showing logs for build [32msalaboy-online-store-master-hw5gd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Showing logs for build [32msalaboy-online-store-master-2ntdc-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
 Using SHAs from PULL_REFS=master:
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32msalaboy-online-store-master-hw5gd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Showing logs for build [32msalaboy-online-store-master-2ntdc-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
 Generated Git credentials file /workspace/xdg_config/git/credentials
 
-Showing logs for build [32msalaboy-online-store-master-hw5gd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-mvn-deploy[0m
+Showing logs for build [32msalaboy-online-store-master-2ntdc-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-mvn-deploy[0m
 Picked up _JAVA_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Xms10m -Xmx192m
 OpenJDK 64-Bit Server VM warning: If the number of processors is expected to increase from one, then you should configure the number of parallel GC threads appropriately using -XX:ParallelGCThreads=N
 [INFO] Scanning for projects...
 [INFO] 
 [INFO] --------------------< com.*******.lke:online-store >--------------------
-[INFO] Building My Simple App on LKE 0.0.1
+[INFO] Building My Simple App on LKE 0.0.3
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ online-store ---
@@ -34,7 +34,7 @@ OpenJDK 64-Bit Server VM warning: If the number of processors is expected to inc
 [INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ online-store ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
 [INFO] Copying 1 resource
-[INFO] Copying 6 resources
+[INFO] Copying 1 resource
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ online-store ---
 [INFO] Changes detected - recompiling the module!
@@ -54,35 +54,35 @@ OpenJDK 64-Bit Server VM warning: If the number of processors is expected to inc
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running com.*******.lke.DemoApplicationTests
-11:05:59.220 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.*******.lke.DemoApplicationTests]
-11:05:59.229 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-11:05:59.306 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-11:05:59.349 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.*******.lke.DemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-11:05:59.415 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.*******.lke.DemoApplicationTests], using SpringBootContextLoader
-11:05:59.420 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.*******.lke.DemoApplicationTests]: class path resource [com/*******/lke/DemoApplicationTests-context.xml] does not exist
-11:05:59.420 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.*******.lke.DemoApplicationTests]: class path resource [com/*******/lke/DemoApplicationTestsContext.groovy] does not exist
-11:05:59.421 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.*******.lke.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-11:05:59.421 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.*******.lke.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-11:05:59.601 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.*******.lke.DemoApplicationTests]
-11:05:59.799 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/workspace/source/target/classes/com/*******/lke/DemoApplication.class]
-11:05:59.816 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.*******.lke.DemoApplication for test class com.*******.lke.DemoApplicationTests
-11:06:00.052 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.*******.lke.DemoApplicationTests]: using defaults.
-11:06:00.093 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-11:06:00.110 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
-11:06:00.119 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/TransactionDefinition]
-11:06:00.120 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
-11:06:00.120 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@50eac852, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@16ec5519, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2f7298b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@188715b5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1ea9f6af, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6a192cfe, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5119fb47, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7193666c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@20deea7f]
-11:06:00.122 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.lke.DemoApplicationTests]
-11:06:00.123 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.lke.DemoApplicationTests]
-11:06:00.124 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.lke.DemoApplicationTests]
-11:06:00.124 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.lke.DemoApplicationTests]
-11:06:00.125 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.lke.DemoApplicationTests]
-11:06:00.125 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.lke.DemoApplicationTests]
-11:06:00.196 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@1a451d4d testClass = DemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@7fa98a66 testClass = DemoApplicationTests, locations = '{}', classes = '{class com.*******.lke.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@27a8c74e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@646d64ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2f943d71, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@2a742aa2, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2c039ac6], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
-11:06:00.197 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.lke.DemoApplicationTests]
-11:06:00.198 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.lke.DemoApplicationTests]
-11:06:00.202 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@1a451d4d testClass = DemoApplicationTests, testInstance = com.*******.lke.DemoApplicationTests@359f7cdf, testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@7fa98a66 testClass = DemoApplicationTests, locations = '{}', classes = '{class com.*******.lke.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@27a8c74e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@646d64ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2f943d71, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@2a742aa2, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2c039ac6], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]].
-11:06:00.228 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+09:25:42.990 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.*******.lke.DemoApplicationTests]
+09:25:43.051 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+09:25:43.067 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+09:25:43.090 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.*******.lke.DemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+09:25:43.105 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.*******.lke.DemoApplicationTests], using SpringBootContextLoader
+09:25:43.149 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.*******.lke.DemoApplicationTests]: class path resource [com/*******/lke/DemoApplicationTests-context.xml] does not exist
+09:25:43.150 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.*******.lke.DemoApplicationTests]: class path resource [com/*******/lke/DemoApplicationTestsContext.groovy] does not exist
+09:25:43.150 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.*******.lke.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+09:25:43.151 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.*******.lke.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+09:25:43.260 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.*******.lke.DemoApplicationTests]
+09:25:43.396 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/workspace/source/target/classes/com/*******/lke/DemoApplication.class]
+09:25:43.459 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.*******.lke.DemoApplication for test class com.*******.lke.DemoApplicationTests
+09:25:43.667 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.*******.lke.DemoApplicationTests]: using defaults.
+09:25:43.668 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+09:25:43.678 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+09:25:43.680 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/TransactionDefinition]
+09:25:43.680 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+09:25:43.681 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@50eac852, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@16ec5519, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2f7298b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@188715b5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1ea9f6af, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6a192cfe, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5119fb47, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7193666c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@20deea7f]
+09:25:43.682 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.lke.DemoApplicationTests]
+09:25:43.683 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.lke.DemoApplicationTests]
+09:25:43.684 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.lke.DemoApplicationTests]
+09:25:43.684 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.lke.DemoApplicationTests]
+09:25:43.684 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.lke.DemoApplicationTests]
+09:25:43.749 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.lke.DemoApplicationTests]
+09:25:43.755 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@1a451d4d testClass = DemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@7fa98a66 testClass = DemoApplicationTests, locations = '{}', classes = '{class com.*******.lke.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@27a8c74e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@646d64ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2f943d71, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@2a742aa2, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2c039ac6], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+09:25:43.755 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.lke.DemoApplicationTests]
+09:25:43.756 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.lke.DemoApplicationTests]
+09:25:43.759 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@1a451d4d testClass = DemoApplicationTests, testInstance = com.*******.lke.DemoApplicationTests@359f7cdf, testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@7fa98a66 testClass = DemoApplicationTests, locations = '{}', classes = '{class com.*******.lke.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@27a8c74e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@646d64ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2f943d71, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@2a742aa2, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2c039ac6], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]].
+09:25:43.851 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -92,11 +92,11 @@ OpenJDK 64-Bit Server VM warning: If the number of processors is expected to inc
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.1.9.RELEASE)
 
-2020-07-21 11:06:01.203  INFO 71 --- [           main] com.*******.lke.DemoApplicationTests     : Starting DemoApplicationTests on *******-online-store-master-hw5gd-1-from-build-pack-2dr66-t8**j with PID 71 (started by root in /workspace/source)
-2020-07-21 11:06:01.205  INFO 71 --- [           main] com.*******.lke.DemoApplicationTests     : No active profile set, falling back to default profiles: default
-2020-07-21 11:06:09.624  INFO 71 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2020-07-21 11:06:12.424  INFO 71 --- [           main] com.*******.lke.DemoApplicationTests     : Started DemoApplicationTests in 12.122 seconds (JVM running for 14.394)
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.034 s - in com.*******.lke.DemoApplicationTests
+2020-07-27 09:25:44.559  INFO 70 --- [           main] com.*******.lke.DemoApplicationTests     : Starting DemoApplicationTests on *******-online-store-master-2ntdc-1-from-build-pack-2lz75-67z9l with PID 70 (started by root in /workspace/source)
+2020-07-27 09:25:44.560  INFO 70 --- [           main] com.*******.lke.DemoApplicationTests     : No active profile set, falling back to default profiles: default
+2020-07-27 09:25:51.287  INFO 70 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-27 09:25:53.387  INFO 70 --- [           main] com.*******.lke.DemoApplicationTests     : Started DemoApplicationTests in 9.529 seconds (JVM running for 11.407)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.134 s - in com.*******.lke.DemoApplicationTests
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -104,106 +104,129 @@ OpenJDK 64-Bit Server VM warning: If the number of processors is expected to inc
 [INFO] 
 [INFO] 
 [INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ online-store ---
-[INFO] Building jar: /workspace/source/target/online-store-0.0.1.jar
+[INFO] Building jar: /workspace/source/target/online-store-0.0.3.jar
 [INFO] 
 [INFO] --- spring-boot-maven-plugin:2.1.9.RELEASE:repackage (repackage) @ online-store ---
 [INFO] Replacing main artifact with repackaged archive
 [INFO] 
 [INFO] --- maven-install-plugin:2.5.2:install (default-install) @ online-store ---
-[INFO] Installing /workspace/source/target/online-store-0.0.1.jar to /home/jenkins/.mvnrepository/com/*******/lke/online-store/0.0.1/online-store-0.0.1.jar
-[INFO] Installing /workspace/source/pom.xml to /home/jenkins/.mvnrepository/com/*******/lke/online-store/0.0.1/online-store-0.0.1.pom
+[INFO] Installing /workspace/source/target/online-store-0.0.3.jar to /home/jenkins/.mvnrepository/com/*******/lke/online-store/0.0.3/online-store-0.0.3.jar
+[INFO] Installing /workspace/source/pom.xml to /home/jenkins/.mvnrepository/com/*******/lke/online-store/0.0.3/online-store-0.0.3.pom
 [INFO] 
 [INFO] --- maven-deploy-plugin:2.8.2:deploy (default-deploy) @ online-store ---
 [INFO] Using alternate deployment repository local-nexus::default::http://nexus/repository/maven-releases/
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  01:18 min
-[INFO] Finished at: 2020-07-21T11:06:32Z
+[INFO] Total time:  45.937 s
+[INFO] Finished at: 2020-07-27T09:26:04Z
 [INFO] ------------------------------------------------------------------------
 
-Showing logs for build [32msalaboy-online-store-master-hw5gd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-skaffold-version[0m
+Showing logs for build [32msalaboy-online-store-master-2ntdc-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-skaffold-version[0m
 v1.0.1
 
-Showing logs for build [32msalaboy-online-store-master-hw5gd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
-E0721 11:07:13.765804      11 aws_credentials.go:77] while getting AWS credentials NoCredentialProviders: no valid providers in chain. Deprecated.
+Showing logs for build [32msalaboy-online-store-master-2ntdc-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+E0727 09:26:46.700198      11 aws_credentials.go:77] while getting AWS credentials NoCredentialProviders: no valid providers in chain. Deprecated.
 	For verbose messaging see aws.Config.CredentialsChainVerboseErrors
 [36mINFO[0m[0042] Using dockerignore file: /workspace/source/.dockerignore 
 [36mINFO[0m[0042] Retrieving image manifest openjdk:8-jdk-slim 
+[36mINFO[0m[0043] Retrieving image manifest openjdk:8-jdk-slim 
+[36mINFO[0m[0044] Built cross stage deps: map[]                
 [36mINFO[0m[0044] Retrieving image manifest openjdk:8-jdk-slim 
-[36mINFO[0m[0045] Built cross stage deps: map[]                
 [36mINFO[0m[0045] Retrieving image manifest openjdk:8-jdk-slim 
-[36mINFO[0m[0046] Retrieving image manifest openjdk:8-jdk-slim 
-[36mINFO[0m[0047] Executing 0 build triggers                   
-[36mINFO[0m[0047] cmd: EXPOSE                                  
-[36mINFO[0m[0047] Adding exposed port: 8080/tcp                
-[36mINFO[0m[0047] Resolving srcs [pom.xml target/lib*]...      
-[36mINFO[0m[0047] Checking for cached layer docker.io/todo/cache:2777298373b250a7242ef6d53300a9660a274e6d32e1267c2a9ee1976af4c45b... 
-[36mINFO[0m[0048] No cached layer found for cmd COPY pom.xml target/lib* /opt/lib/ 
-[36mINFO[0m[0048] Resolving srcs [target/*.jar]...             
-[36mINFO[0m[0048] Unpacking rootfs as cmd COPY pom.xml target/lib* /opt/lib/ requires it. 
-[36mINFO[0m[0056] ENV PORT 8080                                
-[36mINFO[0m[0056] No files changed in this command, skipping snapshotting. 
-[36mINFO[0m[0056] ENV CLASSPATH /opt/lib                       
-[36mINFO[0m[0056] No files changed in this command, skipping snapshotting. 
-[36mINFO[0m[0056] EXPOSE 8080                                  
-[36mINFO[0m[0056] cmd: EXPOSE                                  
-[36mINFO[0m[0056] Adding exposed port: 8080/tcp                
-[36mINFO[0m[0056] No files changed in this command, skipping snapshotting. 
-[36mINFO[0m[0056] Resolving srcs [pom.xml target/lib*]...      
-[36mINFO[0m[0056] COPY pom.xml target/lib* /opt/lib/           
-[36mINFO[0m[0056] Resolving srcs [pom.xml target/lib*]...      
-[36mINFO[0m[0056] Resolving 1 paths                            
-[36mINFO[0m[0056] Taking snapshot of files...                  
-[36mINFO[0m[0056] Pushing layer docker.io/todo/cache:2777298373b250a7242ef6d53300a9660a274e6d32e1267c2a9ee1976af4c45b to cache now 
-[36mINFO[0m[0056] Resolving srcs [target/*.jar]...             
-[36mINFO[0m[0056] COPY target/*.jar /opt/app.jar               
-[36mINFO[0m[0056] Resolving srcs [target/*.jar]...             
-[36mINFO[0m[0056] Resolving 1 paths                            
-[36mINFO[0m[0056] Taking snapshot of files...                  
-[36mINFO[0m[0057] Pushing layer docker.io/todo/cache:1e3a87b384ed7f49138103855712686796d8a6197e15beb44544ba26343abb89 to cache now 
-[36mINFO[0m[0057] WORKDIR /opt                                 
-[36mINFO[0m[0057] cmd: workdir                                 
-[36mINFO[0m[0057] Changed working directory to /opt            
-[36mINFO[0m[0057] No files changed in this command, skipping snapshotting. 
-[36mINFO[0m[0057] CMD ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-jar", "app.jar"] 
-[36mINFO[0m[0057] No files changed in this command, skipping snapshotting. 
-[33mWARN[0m[0058] error uploading layer to cache: failed to push to destination docker.io/todo/cache:2777298373b250a7242ef6d53300a9660a274e6d32e1267c2a9ee1976af4c45b: HEAD https://index.docker.io/v2/todo/cache/blobs/sha256:092247b9049534830fced5f49736c10fe40c872af78851b5b82cf5d8f0ce3340: unsupported status code 401 
+[36mINFO[0m[0046] Executing 0 build triggers                   
+[36mINFO[0m[0046] cmd: EXPOSE                                  
+[36mINFO[0m[0046] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0046] Resolving srcs [pom.xml target/lib*]...      
+[36mINFO[0m[0046] Checking for cached layer docker.io/todo/cache:66ddb4a465fd6e86db39f46fbcb54a8816a2c2613efcb3e96aa514dbf1a1466b... 
+[36mINFO[0m[0047] No cached layer found for cmd COPY pom.xml target/lib* /opt/lib/ 
+[36mINFO[0m[0047] Resolving srcs [target/*.jar]...             
+[36mINFO[0m[0047] Unpacking rootfs as cmd COPY pom.xml target/lib* /opt/lib/ requires it. 
+[36mINFO[0m[0054] ENV PORT 8080                                
+[36mINFO[0m[0054] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0054] ENV CLASSPATH /opt/lib                       
+[36mINFO[0m[0054] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0054] EXPOSE 8080                                  
+[36mINFO[0m[0054] cmd: EXPOSE                                  
+[36mINFO[0m[0054] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0054] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0054] Resolving srcs [pom.xml target/lib*]...      
+[36mINFO[0m[0054] COPY pom.xml target/lib* /opt/lib/           
+[36mINFO[0m[0054] Resolving srcs [pom.xml target/lib*]...      
+[36mINFO[0m[0054] Resolving 1 paths                            
+[36mINFO[0m[0054] Taking snapshot of files...                  
+[36mINFO[0m[0054] Resolving srcs [target/*.jar]...             
+[36mINFO[0m[0054] Pushing layer docker.io/todo/cache:66ddb4a465fd6e86db39f46fbcb54a8816a2c2613efcb3e96aa514dbf1a1466b to cache now 
+[36mINFO[0m[0054] COPY target/*.jar /opt/app.jar               
+[36mINFO[0m[0054] Resolving srcs [target/*.jar]...             
+[36mINFO[0m[0054] Resolving 1 paths                            
+[36mINFO[0m[0054] Taking snapshot of files...                  
+[36mINFO[0m[0055] WORKDIR /opt                                 
+[36mINFO[0m[0055] cmd: workdir                                 
+[36mINFO[0m[0055] Changed working directory to /opt            
+[36mINFO[0m[0055] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0055] CMD ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-jar", "app.jar"] 
+[36mINFO[0m[0055] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0055] Pushing layer docker.io/todo/cache:0787f269a512a8a1731f704b9af2a386fa59a92f9249c4aaf6fbd11bcc690c74 to cache now 
+[33mWARN[0m[0056] error uploading layer to cache: failed to push to destination docker.io/todo/cache:66ddb4a465fd6e86db39f46fbcb54a8816a2c2613efcb3e96aa514dbf1a1466b: HEAD https://index.docker.io/v2/todo/cache/blobs/sha256:111b91b69949fdc61a3eb4d30c9c7195a689d825f0ea953fbf99a71d940b1421: unsupported status code 401 
 
-Showing logs for build [32msalaboy-online-store-master-hw5gd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
+Showing logs for build [32msalaboy-online-store-master-2ntdc-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
 no CVE provider running in the current ** namespace so skip adding image to be analysed
 
-Showing logs for build [32msalaboy-online-store-master-hw5gd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
+Showing logs for build [32msalaboy-online-store-master-2ntdc-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
 Converted /workspace/source/charts/online-store to an unshallow repository
-Generating change log from git ref 42749ca1e31ed72978577392b6d9a32e79b891dc => d1e610b2ccce71e31367a36d71a037df82540c25
+Generating change log from git ref 34fa07eb778e31ab6501030eeb63643e7de0f79a => dbdcd6ab4fc3c0fac7f696c5205e258e3e2ebf82
 Associating user x-0 in users.jenkins.io with email *******@gmail.com to git GitProvider user with login -0 as emails match
 Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
-WARNING: Failed to enrich commit 288032dfa06de1032ec72c6417b8f28c491b7032 with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+WARNING: Failed to enrich commit 19d7ab3c6969b87dfd4ecd3b0cbf22d22aa6cd63 with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+Associating user x-0 in users.jenkins.io with email *******@gmail.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit 19d7ab3c6969b87dfd4ecd3b0cbf22d22aa6cd63 with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
 Finding issues in commit messages using git format
-WARNING: No release found for *******/online-store and tag v0.0.1 so creating a new release
-Updated the release information at https://github.com/*******/online-store/releases/tag/v0.0.1
+Associating user x-0 in users.jenkins.io with email *******@gmail.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit 3ec75098ec111970a4f46d2a0112bb27e9be0f79 with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+Associating user x-0 in users.jenkins.io with email *******@gmail.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit 3ec75098ec111970a4f46d2a0112bb27e9be0f79 with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+Associating user x-0 in users.jenkins.io with email *******@gmail.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit 134641bdd9701c56ca5bfdb723588805d97deee4 with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+Associating user x-0 in users.jenkins.io with email *******@gmail.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit 134641bdd9701c56ca5bfdb723588805d97deee4 with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+Associating user x-0 in users.jenkins.io with email *******@gmail.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit 1a0bfbc5234608830ead26042d4e2923957169ed with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+Associating user x-0 in users.jenkins.io with email *******@gmail.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit 1a0bfbc5234608830ead26042d4e2923957169ed with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+WARNING: No release found for *******/online-store and tag v0.0.3 so creating a new release
+Updated the release information at https://github.com/*******/online-store/releases/tag/v0.0.3
 generated: /workspace/source/charts/online-store/templates/release.yaml
-Created Release online-store-0-0-1 resource in namespace **
-Updating PipelineActivity *******-online-store-master-1 with version 0.0.1
-Updated PipelineActivities *******-online-store-master-1 with release notes URL: https://github.com/*******/online-store/releases/tag/v0.0.1
+Created Release online-store-0-0-3 resource in namespace **
+Updating PipelineActivity *******-online-store-master-1 with version 0.0.3
+Updated PipelineActivities *******-online-store-master-1 with release notes URL: https://github.com/*******/online-store/releases/tag/v0.0.3
 
-Showing logs for build [32msalaboy-online-store-master-hw5gd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
+Showing logs for build [32msalaboy-online-store-master-2ntdc-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
 Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
 Successfully added Helm repository storage.googleapis.com.
 Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
 Successfully added Helm repository jenkins-x-chartmuseum.
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
-Uploading chart file online-store-0.0.1.tgz to http://jenkins-x-chartmuseum:8080/api/charts
+Uploading chart file online-store-0.0.3.tgz to http://jenkins-x-chartmuseum:8080/api/charts
 Received 201 response: {"saved":true}
 
-Showing logs for build [32msalaboy-online-store-master-hw5gd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
+Showing logs for build [32msalaboy-online-store-master-2ntdc-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
 WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
-Promoting app online-store version 0.0.1 to namespace **-staging
-Created Pull Request: https://github.com/*******/environment-**-*******-staging/pull/1
-Added label updatebot to Pull Request https://github.com/*******/environment-**-*******-staging/pull/1
-got git provider status pending from PR https://github.com/*******/environment-**-*******-staging/pull/1
-Pull Request https://github.com/*******/environment-**-*******-staging/pull/1 is merged at sha 2bb8daac53e3aaa129085111fd010ac6e1b1fb9c
+Promoting app online-store version 0.0.3 to namespace **-staging
+Created Pull Request: https://github.com/*******/environment-**-*******-staging/pull/4
+Added label updatebot to Pull Request https://github.com/*******/environment-**-*******-staging/pull/4
+got git provider status pending from PR https://github.com/*******/environment-**-*******-staging/pull/4
+got git provider status pending from PR https://github.com/*******/environment-**-*******-staging/pull/4
+got git provider status pending from PR https://github.com/*******/environment-**-*******-staging/pull/4
+Pull Request https://github.com/*******/environment-**-*******-staging/pull/4 is merged at sha e9a4d11490e64d9e68343865cba6229a48208432
 Pull Request merged but we are not waiting for the update pipeline to complete!
 WARNING: Could not find the service URL in namespace **-staging for names online-store, **-online-store, **-staging-online-store
