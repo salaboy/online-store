@@ -21,7 +21,7 @@ class SiteController {
     @Value("${version:0.0.0}")
     private String version;
 
-    @Value("${PRODUCT_SERVICE:http://product-service}")
+    @Value("${PRODUCT_SERVICE:http://products-service}")
     private String PRODUCT_SERVICE;
 
     private RestTemplate restTemplate = new RestTemplate();
